@@ -1,0 +1,15 @@
+<div>
+  <%= form_with(model: search_request, method: :post) do|f| %>
+    <div class="form-group">
+
+      <div class ="mb-3 text_feald_input">
+        <label class="form-label">GitHub Login:</label>
+        <%= f.text_field :login, class:"mb-3", placeholder: 'user login' %> 
+      </div>
+
+      <div class ="mb-3">
+        <%= f.submit "Search", class:'btn btn-primary' %>
+      </div>
+    </div>
+  <% end %>
+</div>
