@@ -6,6 +6,7 @@ AllCops:
     TargetRubyVersion: 3.0.2
     NewCops: enable
 
+
 Layout/LineLength:
   Max: 120
 
@@ -22,3 +23,11 @@ Metrics/BlockLength:
     - 'Rakefile'
     - 'spec/**/*.rb'
     - 'config/environments/*.rb'
+
+Metrics/MethodLength:
+  Exclude: 
+  - app/controllers/graphql_controller.rb
+
+Naming/MethodParameterName:
+  Exclude:
+  - app/controllers/graphql_controller.rb

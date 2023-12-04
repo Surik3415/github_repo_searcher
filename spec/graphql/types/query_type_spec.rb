@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
-require 'rails_helper'
-
 RSpec.describe Types::QueryType, type: :graphql do
-  describe 'user_data_and_repos' do
+  describe 'user_data_and_repos QueryType' do
     let(:query) do
       <<~GQL
         query {
@@ -21,12 +19,26 @@ RSpec.describe Types::QueryType, type: :graphql do
       GQL
     end
 
-    it 'fetches user and repository data' do
+    it 'check data type of prepared data' do
       VCR.use_cassette('query_type_user_data_and_repos') do
         result = execute_query(query)
         prepared_data = result['data']['userDataAndRepos']
         expect(prepared_data).to be_an(Array)
-        expect(prepared_data.first['owner']).to be_a(Array)
+      end
+    end
+
+    it 'check data type of owner data' do
+      VCR.use_cassette('query_type_user_data_and_repos') do
+        result = execute_query(query)
+        prepared_data = result['data']['userDataAndRepos']
+        expect(prepared_data.first['owner'].first['name']).to be_a(String)
+      end
+    end
+
+    it 'check data type of repoNames data' do
+      VCR.use_cassette('query_type_user_data_and_repos') do
+        result = execute_query(query)
+        prepared_data = result['data']['userDataAndRepos']
         expect(prepared_data.first['repoNames']).to be_an(Array)
       end
     end
