@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await fetchGraphQL(graphqlQuery);
       const responseData = await parseResponse(response);
 
-      // Update the UI with responseData
       updateUI(graphqlResponseContainer, response.headers.get('content-type'), responseData);
 
     } catch (error) {

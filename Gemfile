@@ -75,4 +75,13 @@ end
 gem 'graphiql-rails', group: :development
 gem 'graphql', '~> 2.1'
 
+group :test do
+  gem 'rails-controller-testing', '~> 1.0'
+  gem 'rspec-graphql_matchers', '~> 2.0.pre.rc.0'
+  gem 'rspec-rails', '~> 6.0', '>= 6.0.3'
+  gem 'simplecov', '~> 0.22.0'
+  gem 'vcr', '~> 6.2'
+  gem 'webmock', '~> 3.19'
+end
+
 gem 'httparty', '~> 0.21.0'

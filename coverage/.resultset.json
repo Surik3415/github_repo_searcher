@@ -1,0 +1,428 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/controllers/requests_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/query_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/base_object.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/base_edge.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/base_connection.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/base_field.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/base_argument.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/request_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/repo_owner_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/repos_container_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/repo_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/models/repo_owner.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/models/repo.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/models/repos_container.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/models/request.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/services/github_repo_info_service.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          10,
+          10,
+          10,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/services/github_user_info_service.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/mutation_type.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/controllers/graphql_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/base_enum.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/base_input_object.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/base_interface.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/base_scalar.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/base_union.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/node_type.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1701719882
+  }
+}

@@ -3,7 +3,7 @@
 module Types
   class QueryType < Types::BaseObject
     include GraphQL::Types::Relay::HasNodeField
-    include GraphQL::Types::Relay::HasNodesField 
+    include GraphQL::Types::Relay::HasNodesField
 
     field :user_data_and_repos, [Types::RequestType], 'Fetch user and repository data' do
       argument :query, String, 'GitHub login'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class GithubRepoInfoService
   def initialize(query)
     @query = query
@@ -5,7 +7,6 @@ class GithubRepoInfoService
 
   def self.call(query)
     new(query).call
-
   end
 
   def call
