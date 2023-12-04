@@ -2,11 +2,7 @@
 
 module Types
   class RepoType < Types::BaseObject
-    field :id, ID, null: false
     field :name, String
-    field :repo_owner_id, Integer, null: false
     field :repo_owner, Types::RepoOwnerType, null: false
-    field :created_at, GraphQL::Types::ISO8601DateTime, null: false
-    field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
   end
 end

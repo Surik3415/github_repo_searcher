@@ -13,33 +13,4 @@
 ActiveRecord::Schema[7.1].define(version: 2023_12_03_002140) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "repo_owners", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "repos", force: :cascade do |t|
-    t.string "name"
-    t.bigint "repo_owner_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "repos_container_id"
-    t.index ["repo_owner_id"], name: "index_repos_on_repo_owner_id"
-    t.index ["repos_container_id"], name: "index_repos_on_repos_container_id"
-  end
-
-  create_table "repos_containers", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "requests", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_foreign_key "repos", "repo_owners"
-  add_foreign_key "repos", "repos_containers"
 end
