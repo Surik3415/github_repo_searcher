@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'rails_helper'
-
 RSpec.describe Types::ReposContainerType, type: :graphql do
   describe 'fields' do
     it 'has a results field of RepoType type' do
