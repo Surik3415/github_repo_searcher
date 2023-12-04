@@ -1,5 +1,4 @@
 class GithubUserInfoService
-
   def initialize(query)
     @query = query
   end

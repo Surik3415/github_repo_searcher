@@ -5,7 +5,6 @@ class GithubRepoInfoService
 
   def self.call(query)
     new(query).call
-
   end
 
   def call

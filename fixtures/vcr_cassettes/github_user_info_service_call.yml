@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/surik3415
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Mon, 04 Dec 2023 17:37:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"aee661f5425764b38b541519330c717f040798d3f25bc932759471e7d0b341fe"
+      Last-Modified:
+      - Sat, 02 Dec 2023 16:16:04 GMT
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Github-Api-Version-Selected:
+      - '2022-11-28'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '53'
+      X-Ratelimit-Reset:
+      - '1701712575'
+      X-Ratelimit-Resource:
+      - core
+      X-Ratelimit-Used:
+      - '7'
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '459'
+      X-Github-Request-Id:
+      - B1A8:0B9A:191022:195630:656E0E6E
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"Surik3415","id":103749294,"node_id":"U_kgDOBi8Wrg","avatar_url":"https://avatars.githubusercontent.com/u/103749294?v=4","gravatar_id":"","url":"https://api.github.com/users/Surik3415","html_url":"https://github.com/Surik3415","followers_url":"https://api.github.com/users/Surik3415/followers","following_url":"https://api.github.com/users/Surik3415/following{/other_user}","gists_url":"https://api.github.com/users/Surik3415/gists{/gist_id}","starred_url":"https://api.github.com/users/Surik3415/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Surik3415/subscriptions","organizations_url":"https://api.github.com/users/Surik3415/orgs","repos_url":"https://api.github.com/users/Surik3415/repos","events_url":"https://api.github.com/users/Surik3415/events{/privacy}","received_events_url":"https://api.github.com/users/Surik3415/received_events","type":"User","site_admin":false,"name":"Suren
+        Avakian","company":null,"blog":"","location":"Ukraine","email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":5,"public_gists":0,"followers":0,"following":0,"created_at":"2022-04-15T11:46:11Z","updated_at":"2023-12-02T16:16:04Z"}'
+  recorded_at: Mon, 04 Dec 2023 17:37:50 GMT
+recorded_with: VCR 6.2.0
