@@ -2,6 +2,8 @@
   <div>
     <h1>Search page</h1>
 
-    <%= render "search_form", search_request: @search_request %>
+    <%= render "search_form", request: @request %>
+
+    <div id="graphql-response" class="list-group"></div>
   </div>
 </div>
