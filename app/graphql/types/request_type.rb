@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Types
   class RequestType < Types::BaseObject
     field :owner, [Types::RepoOwnerType], 'User data', null: true

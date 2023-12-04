@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class GithubRepoInfoService
   def initialize(query)
     @query = query

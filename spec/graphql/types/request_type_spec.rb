@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # spec/graphql/types/request_type_spec.rb
 
 # require 'rails_helper'

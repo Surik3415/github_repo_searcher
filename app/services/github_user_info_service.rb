@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class GithubUserInfoService
   def initialize(query)
     @query = query

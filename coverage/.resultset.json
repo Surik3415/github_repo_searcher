@@ -104,6 +104,8 @@
       },
       "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/request_type.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -125,6 +127,8 @@
       },
       "/home/surik3415/Desktop/ciber/github_repo_searcher/app/graphql/types/repos_container_type.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -166,6 +170,8 @@
       },
       "/home/surik3415/Desktop/ciber/github_repo_searcher/app/models/repos_container.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -174,6 +180,8 @@
       },
       "/home/surik3415/Desktop/ciber/github_repo_searcher/app/models/request.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -182,6 +190,8 @@
       },
       "/home/surik3415/Desktop/ciber/github_repo_searcher/app/services/github_repo_info_service.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           2,
@@ -222,6 +232,8 @@
       },
       "/home/surik3415/Desktop/ciber/github_repo_searcher/app/services/github_user_info_service.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           2,
@@ -411,6 +423,6 @@
         }
       }
     },
-    "timestamp": 1701714397
+    "timestamp": 1701719882
   }
 }
