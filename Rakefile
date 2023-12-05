@@ -5,5 +5,4 @@
 
 require_relative 'config/application'
 Rails.application.load_tasks
-load File.expand_path('lib/tasks/jslint.rake', __dir__)
 Rake::Task['jslint:lint'].invoke if ARGV.include?('jslint:lint')
