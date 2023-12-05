@@ -19,3 +19,4 @@ production:
   database: github_repo_searcher_production
   username: github_repo_searcher
   password: <%= ENV["GITHUB_REPO_SEARCHER_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
