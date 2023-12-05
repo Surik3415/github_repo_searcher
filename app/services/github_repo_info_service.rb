@@ -19,7 +19,10 @@ class GithubRepoInfoService
 
   def fetch_repo_data
     repos_url = "https://api.github.com/users/#{@query}/repos"
-    HTTParty.get(repos_url)
+    HTTParty.get(repos_url, headers: {
+                   token_type: 'bearer',
+                   Authorization: ENV.fetch('GITHUB_TOKEN', nil).to_s
+                 })
   end
 
   # def prepare_repo_data(repos_response)
