@@ -22,10 +22,20 @@ class GithubRepoInfoService
     HTTParty.get(repos_url)
   end
 
+  # def prepare_repo_data(repos_response)
+  #   JSON.parse(repos_response.body).map do |response_repo|
+  #     repo = Repo.new
+  #     repo.name = response_repo['name']
+  #     repo
+  #   end
+  # end
+
   def prepare_repo_data(repos_response)
-    JSON.parse(repos_response.body).map do |response_repo|
+    parsed_response = JSON.parse(repos_response.body)
+    Rails.logger.info("Parsed Response: #{parsed_response}")
+    parsed_response.map do |response_repo|
       repo = Repo.new
-      repo.name = response_repo['name']
+      repo.name = response_repo['name'].to_s
       repo
     end
   end
