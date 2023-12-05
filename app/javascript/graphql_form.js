@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     } catch (error) {
       console.error(error.message);
-      
+
       if (error.response) {
-        console.error("Response JSON:", error.response);
+        console.error("Response Body:", error.response.body);
       }
     }
   }
