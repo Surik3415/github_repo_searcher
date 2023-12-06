@@ -26,7 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
       updateUI(graphqlResponseContainer, response.headers.get('content-type'), responseData);
 
     } catch (error) {
-      console.error(error);
+      console.error(error.message);
+
+      if (error.response) {
+        console.error("Response Body:", error.response.body);
+      }
     }
   }
 });

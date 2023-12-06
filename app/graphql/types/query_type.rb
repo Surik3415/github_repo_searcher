@@ -10,6 +10,8 @@ module Types
     end
 
     def user_data_and_repos(query:)
+      return [] if query.blank?
+
       owner_data = GithubUserInfoService.call(query)
       repo_data = GithubRepoInfoService.call(query)
 

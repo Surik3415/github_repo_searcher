@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 class GithubRepoInfoService
+  GITHUB_TOKEN_HEADERS = {
+    token_type: 'bearer',
+    Authorization: ENV.fetch('GITHUB_TOKEN', nil)
+  }.freeze
+
   def initialize(query)
     @query = query
   end
@@ -19,7 +24,7 @@ class GithubRepoInfoService
 
   def fetch_repo_data
     repos_url = "https://api.github.com/users/#{@query}/repos"
-    HTTParty.get(repos_url)
+    HTTParty.get(repos_url, headers: GITHUB_TOKEN_HEADERS)
   end
 
   def prepare_repo_data(repos_response)
