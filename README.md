@@ -1,5 +1,3 @@
-# README
-
 # GitHub Repo Searcher
 
 ## About the Project
