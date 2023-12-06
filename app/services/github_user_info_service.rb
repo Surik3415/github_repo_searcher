@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 class GithubUserInfoService
+  GITHUB_TOKEN_HEADERS = {
+    token_type: 'bearer',
+    Authorization: ENV.fetch('GITHUB_TOKEN', nil)
+  }.freeze
+
   def initialize(query)
     @query = query
   end
@@ -18,10 +23,7 @@ class GithubUserInfoService
 
   def fetch_user_data
     user_url = "https://api.github.com/users/#{@query}"
-    HTTParty.get(user_url, headers: {
-                   token_type: 'bearer',
-                   Authorization: ENV.fetch('GITHUB_TOKEN', nil).to_s
-                 }).as_json
+    HTTParty.get(user_url, headers: GITHUB_TOKEN_HEADERS)
   end
 
   def prepare_user_data(user_data)

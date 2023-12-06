@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 class GithubRepoInfoService
+  GITHUB_TOKEN_HEADERS = {
+    token_type: 'bearer',
+    Authorization: ENV.fetch('GITHUB_TOKEN', nil)
+  }.freeze
+
   def initialize(query)
     @query = query
   end
@@ -19,26 +24,13 @@ class GithubRepoInfoService
 
   def fetch_repo_data
     repos_url = "https://api.github.com/users/#{@query}/repos"
-    HTTParty.get(repos_url, headers: {
-                   token_type: 'bearer',
-                   Authorization: ENV.fetch('GITHUB_TOKEN', nil).to_s
-                 })
+    HTTParty.get(repos_url, headers: GITHUB_TOKEN_HEADERS)
   end
 
-  # def prepare_repo_data(repos_response)
-  #   JSON.parse(repos_response.body).map do |response_repo|
-  #     repo = Repo.new
-  #     repo.name = response_repo['name']
-  #     repo
-  #   end
-  # end
-
   def prepare_repo_data(repos_response)
-    parsed_response = JSON.parse(repos_response.body)
-    Rails.logger.info("Parsed Response: #{parsed_response}")
-    parsed_response.map do |response_repo|
+    JSON.parse(repos_response.body).map do |response_repo|
       repo = Repo.new
-      repo.name = response_repo['name'].to_s
+      repo.name = response_repo['name']
       repo
     end
   end
